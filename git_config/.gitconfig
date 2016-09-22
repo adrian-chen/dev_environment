@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Adrian Chen
+#	email = adrian.chen9@gmail.com
+[user]
+	name = Adrian Chen
+	email = adrian.chen@ibotta.com
+[diff]
+	compactionHeuristic = true
+[core]
+	excludesfile = /Users/Adrian/.gitignore

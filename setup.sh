@@ -45,4 +45,9 @@ mkdir -p "$HOME/.zprofile.d"
 # iTerm2 shell integration
 # TODO: Add powerline stuff, could maybe go in .zprofile
 
+# Github setup
+cp git_config/.gitconfig ~/.gitconfig
+cp git_config/.gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
+
 printf "\nDone!\n"
