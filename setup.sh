@@ -24,6 +24,10 @@ apm install linter-rubocop
 apm install pigments
 apm install symbol-gen
 
+echo "Add to ~/.atom/config.cson"
+echo "'linter-rubocop':"
+echo "  'executablePath': <(rbenv) which rubocop>"
+
 # Install Antigen
 git clone https://github.com/zsh-users/antigen.git "$HOME/.antigen" || true
 
