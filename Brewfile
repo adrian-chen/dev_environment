@@ -2,6 +2,7 @@ install caskroom/cask/brew-cask
 
 # General setup
 install git
+install tig
 cask install dropbox
 cask install google-drive
 cask install google-chrome
