@@ -1,21 +1,26 @@
-install caskroom/cask/brew-cask
+brew 'caskroom/cask/brew-cask'
 
 # General setup
-install git
-install tig
-cask install dropbox
-cask install google-drive
-cask install google-chrome
-cask install steam
-cask install slack
-cask install spotify
-cask install iterm2
-cask install alfred
-cask install spectacle
-cask install atom
-install ctags
+brew 'git'
+brew 'tig'
+cask 'dropbox'
+cask 'google-drive'
+cask 'google-chrome'
+cask 'steam'
+cask 'slack'
+cask 'spotify'
+cask 'iterm2'
+cask 'alfred'
+cask 'spectacle'
+cask 'atom'
+brew 'ctags'
+
+# Docker
+cask 'virtualbox'
+brew 'docker'
+cask 'docker-toolbox'
 
 # Ruby stuff
-install rbenv
-install rbenv-gem-rehash
-install ruby-build
+brew 'rbenv'
+brew 'rbenv-gem-rehash'
+brew 'ruby-build'
