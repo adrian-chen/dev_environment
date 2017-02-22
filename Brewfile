@@ -1,5 +1,3 @@
-brew 'caskroom/cask/brew-cask'
-
 # General setup
 brew 'git'
 brew 'tig'
@@ -12,6 +10,7 @@ cask '1password'
 cask 'steam'
 cask 'origin'
 cask 'postman'
+cask 'java'
 cask 'dbvisualizer'
 cask 'sequel-pro'
 cask 'slack'
@@ -22,6 +21,7 @@ cask 'spectacle'
 cask 'atom'
 cask 'unity'
 brew 'ctags'
+brew 'zsh'
 
 # Docker
 cask 'virtualbox'
@@ -30,5 +30,3 @@ cask 'docker-toolbox'
 
 # Ruby stuff
 brew 'rbenv'
-brew 'rbenv-gem-rehash'
-brew 'ruby-build'

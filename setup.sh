@@ -13,10 +13,6 @@ brew doctor
 brew update
 brew bundle
 
-# Download Homebrew uninstaller
-wget -nc -P $(brew --prefix)/bin https://gist.githubusercontent.com/mxcl/1173223/raw/a833ba44e7be8428d877e58640720ff43c59dbad/uninstall_homebrew.sh
-chmod +x $(brew --prefix)/bin/uninstall_homebrew.sh
-
 # Atom packages
 gem install rubocop
 apm install linter
@@ -43,7 +39,7 @@ for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
 done
 
 # Zsh settings
-symlink '.z*' "$HOME"
+ln -s '.z*' "$HOME"
 mkdir -p "$HOME/.zprofile.d"
 
 # iTerm2 shell integration
