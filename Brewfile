@@ -23,6 +23,9 @@ cask 'unity'
 brew 'ctags'
 brew 'zsh'
 
+# Powerline
+brew 'python'
+
 # Docker
 cask 'virtualbox'
 brew 'docker'

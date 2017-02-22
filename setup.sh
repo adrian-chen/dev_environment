@@ -33,6 +33,8 @@ if [[ "$SHELL" != "$ZSH_PATH" ]]; then
   sudo chsh -s "$ZSH_PATH" "$USER"
 fi
 
+pip install --user powerline-status
+
 # Download Solarized theme for iTerm2
 for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
   wget -nc -P "$HOME/Documents" "https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f"
@@ -40,7 +42,7 @@ done
 
 # Zsh settings
 ln -s '.z*' "$HOME"
-mkdir -p "$HOME/.zprofile.d"
+cp .zprofile ~/.zprofile
 
 # iTerm2 shell integration
 # TODO: Add powerline stuff, could maybe go in .zprofile
