@@ -22,6 +22,7 @@ cask 'atom'
 cask 'unity'
 brew 'ctags'
 brew 'zsh'
+cask 'gimp'
 
 # Powerline
 brew 'python'
