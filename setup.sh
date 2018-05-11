@@ -44,9 +44,7 @@ git clone https://github.com/powerline/fonts.git
 rm -rf fonts  # cleanup
 
 # Solarized for Mac Terminal
-git clone git://github.com/altercation/solarized.git
-open solarized/osx-terminal.app-colors-solarized/Solarized\ Dark\ ansi.terminal # import into terminal
-# Will need to manually clean this up later.
+open Solarized\ Dark.terminal # import into terminal
 
 # Zsh settings
 ln -s '.z*' "$HOME"

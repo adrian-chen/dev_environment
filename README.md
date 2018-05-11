@@ -5,6 +5,5 @@
 * Packages -> tree-view -> Settings -> Hide Ignored
 
 ## Solarized Dark & Powerline
-* Will need to go into Terminal Settings and set Solarized Dark and the default
+* Will need to go into Terminal Settings and set Solarized Dark as the default.
 * Will also need to set a correct Powerline font. I prefer Meslo M currently.
-* After this, remove the files: `rm -rf solarized`
