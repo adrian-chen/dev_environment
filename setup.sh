@@ -13,6 +13,10 @@ brew doctor
 brew update
 brew bundle
 
+# Setup pip
+xcode-select --install
+sudo easy_install pip
+
 # Atom packages
 gem install rubocop
 apm install linter
@@ -33,19 +37,20 @@ if [[ "$SHELL" != "$ZSH_PATH" ]]; then
   sudo chsh -s "$ZSH_PATH" "$USER"
 fi
 
+# Powerline for Mac Terminal
 pip install --user powerline-status
+git clone https://github.com/powerline/fonts.git
+./fonts/install.sh # install
+rm -rf fonts  # cleanup
 
-# Download Solarized theme for iTerm2
-for f in Solarized%20Dark.itermcolors Solarized%20Light.itermcolors; do
-  wget -nc -P "$HOME/Documents" "https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/$f"
-done
+# Solarized for Mac Terminal
+git clone git://github.com/altercation/solarized.git
+open solarized/osx-terminal.app-colors-solarized/Solarized\ Dark\ ansi.terminal # import into terminal
+# Will need to manually clean this up later.
 
 # Zsh settings
 ln -s '.z*' "$HOME"
 cp .zprofile ~/.zprofile
-
-# iTerm2 shell integration
-# TODO: Add powerline stuff, could maybe go in .zprofile
 
 # Github setup
 cp git_config/.gitconfig ~/.gitconfig

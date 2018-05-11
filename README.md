@@ -4,6 +4,7 @@
 * Settings -> Themes -> Solarized Dark
 * Packages -> tree-view -> Settings -> Hide Ignored
 
-## Powerline
-* Get a [Powerline Font](https://github.com/powerline/fonts)
-* Set as the default in iTerm2
+## Solarized Dark & Powerline
+* Will need to go into Terminal Settings and set Solarized Dark and the default
+* Will also need to set a correct Powerline font. I prefer Meslo M currently.
+* After this, remove the files: `rm -rf solarized`
