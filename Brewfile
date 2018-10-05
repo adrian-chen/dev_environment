@@ -2,7 +2,7 @@
 brew 'git'
 brew 'tig'
 cask 'dropbox'
-cask 'google-drive'
+cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'flux'
 cask '1password'
@@ -19,7 +19,7 @@ cask 'atom'
 cask 'unity'
 brew 'ctags'
 brew 'zsh'
-cask 'gimp'
+brew 'node'
 
 # Powerline
 brew 'python'
