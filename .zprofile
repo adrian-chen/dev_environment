@@ -1,3 +1,6 @@
+# Setup for AWS EB CLI
+export PATH=LOCAL_PATH:$PATH
+
 source "$HOME/.antigen/antigen.zsh"
 antigen use oh-my-zsh
 antigen theme agnoster # Layout, not color scheme

@@ -24,6 +24,7 @@ apm install linter-rubocop
 apm install pigments
 apm install symbol-gen
 apm install atom-typescript
+apm install atom-ide-ui
 
 echo "Add to ~/.atom/config.cson"
 echo "'linter-rubocop':"
