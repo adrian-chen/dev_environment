@@ -4,7 +4,7 @@ export VISUAL=/usr/bin/vim
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 source "$HOME/.antigen/antigen.zsh"
 antigen use oh-my-zsh
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme romkatv/powerlevel10k
 # TODO: use Solarized Dark
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
