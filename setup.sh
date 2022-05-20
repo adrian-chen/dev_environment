@@ -33,12 +33,6 @@ echo "  'executablePath': '<(rbenv) which rubocop>'"
 # Install Antigen
 git clone https://github.com/zsh-users/antigen.git "$HOME/.antigen" || true
 
-# Change default shell if necessary
-ZSH_PATH="$(brew --prefix)/bin/zsh"
-if [[ "$SHELL" != "$ZSH_PATH" ]]; then
-  sudo chsh -s "$ZSH_PATH" "$USER"
-fi
-
 # Powerline for Mac Terminal
 pip install --user powerline-status
 git clone https://github.com/powerline/fonts.git
@@ -57,4 +51,4 @@ cp git_config/.gitconfig ~/.gitconfig
 cp git_config/.gitignore ~/.gitignore
 git config --global core.excludesfile ~/.gitignore
 
-printf "\nDone!\n"
+printf "\nDone! Make sure you install the recommended powerline10k fonts: https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k\n"
