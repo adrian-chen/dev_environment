@@ -24,10 +24,6 @@ brew 'node'
 # Powerline
 brew 'python'
 
-# AWS CLI tools
-brew awscli
-brew awsebcli
-
 # Docker
 cask 'virtualbox'
 brew 'docker'
