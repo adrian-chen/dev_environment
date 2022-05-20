@@ -1,7 +1,6 @@
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 source "$HOME/.antigen/antigen.zsh"
 antigen use oh-my-zsh
 antigen theme romkatv/powerlevel10k
@@ -12,8 +11,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen apply
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(status time)
 
 bindkey "\e\eOC" forward-word
 bindkey "\e\eOD" backward-word
