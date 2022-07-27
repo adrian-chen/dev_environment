@@ -8,6 +8,7 @@ fi
 # Install Homebrew and bundled packages
 if ! command -v brew >/dev/null 2>&1; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 brew doctor
 brew update
