@@ -1,9 +1,4 @@
 # New laptop setup
-
-1. Install Brew: https://brew.sh/
-Don't forget to run the commands at the end!
-
-2. Run the following output:
 ```
 cd ~
 git clone https://github.com/adrian-chen/dev_environment.git
