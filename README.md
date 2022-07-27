@@ -8,7 +8,7 @@ Don't forget to run the commands at the end!
 cd ~
 git clone https://github.com/adrian-chen/dev_environment.git
 cd dev_environment
-brew bundle
+./setup.sh
 ```
 
 ## Atom setup
