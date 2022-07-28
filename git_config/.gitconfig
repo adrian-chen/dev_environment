@@ -1,11 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-#	name = Adrian Chen
-#	email = adrian.chen9@gmail.com
-[user]
 	name = Adrian Chen
-	email = adrian.chen@ibotta.com
+	email = adrian.chen9@gmail.com
 [diff]
 	compactionHeuristic = true
 [core]
