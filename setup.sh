@@ -46,6 +46,7 @@ open Solarized\ Dark.terminal # import into terminal
 # Zsh settings
 ln -s '.z*' "$HOME"
 cp .zprofile ~/.zprofile
+cp .zshrc ~/.zshrc
 
 # Github setup
 cp git_config/.gitconfig ~/.gitconfig
