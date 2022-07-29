@@ -15,7 +15,6 @@ brew update
 brew bundle
 
 # Setup pip
-xcode-select --install
 sudo easy_install pip
 
 # Atom packages
