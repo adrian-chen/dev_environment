@@ -1,5 +1,7 @@
 bindkey "\e\eOC" forward-word
 bindkey "\e\eOD" backward-word
+bindkey "\e\e[C" forward-word
+bindkey "\e\e[D" backward-word
 
 alias nuke="make clean && make bootstrap && make open_xcode"
 alias lint="SwiftLint --fix"
