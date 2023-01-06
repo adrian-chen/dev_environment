@@ -12,6 +12,7 @@ if ! command -v brew >/dev/null 2>&1; then
 fi
 brew doctor
 brew update
+brew tap microsoft/git
 brew bundle
 
 # Setup pip

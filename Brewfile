@@ -1,12 +1,9 @@
 # General setup
 brew 'git'
+cask 'git-credential-manager-core'
 brew 'tig'
-cask 'dropbox'
 cask 'google-chrome'
-cask 'flux'
 cask '1password'
-cask 'steam'
-cask 'origin'
 cask 'postman'
 cask 'dbvisualizer'
 cask 'sequel-ace'
@@ -21,11 +18,6 @@ brew 'node'
 
 # Powerline
 brew 'python'
-
-# Docker
-cask 'virtualbox'
-brew 'docker'
-cask 'docker-toolbox'
 
 # Ruby stuff
 brew 'rbenv'
