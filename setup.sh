@@ -15,16 +15,6 @@ brew update
 brew tap microsoft/git
 brew bundle
 
-# Setup pip
-sudo easy_install pip
-
-# Node
-nvm install 24
-npm install -g @anthropic-ai/claude-code
-
-# Install Fisher
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-
 # Powerline Fonts
 pip install --user powerline-status
 git clone https://github.com/powerline/fonts.git
@@ -32,8 +22,17 @@ git clone https://github.com/powerline/fonts.git
 rm -rf fonts  # cleanup
 
 # Fish shell setup
-fisher install IlanCosman/tide@v6
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
+fisher install jorgebucaran/fisher IlanCosman/tide@v6 FabioAntunes/fish-nvm edc/bass
+cp config.fish ~/.config/fish/config.fish
 tide configure
+
+# Setup pip
+sudo easy_install pip
+
+# Node
+nvm install 24
+npm install -g @anthropic-ai/claude-code
 
 # Github setup
 cp git_config/.gitconfig ~/.gitconfig
