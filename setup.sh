@@ -15,42 +15,30 @@ brew update
 brew tap microsoft/git
 brew bundle
 
-# Setup pip
-sudo easy_install pip
-
-# Atom packages
-gem install rubocop
-apm install linter
-apm install linter-rubocop
-apm install pigments
-apm install symbol-gen
-apm install atom-typescript
-apm install atom-ide-ui
-
-echo "Add to ~/.atom/config.cson"
-echo "'linter-rubocop':"
-echo "  'executablePath': '<(rbenv) which rubocop>'"
-
-# Install Antigen
-git clone https://github.com/zsh-users/antigen.git "$HOME/.antigen" || true
-
-# Powerline for Mac Terminal
+# Powerline Fonts
 pip install --user powerline-status
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh # install
 rm -rf fonts  # cleanup
 
-# Solarized for Mac Terminal
-open Solarized\ Dark.terminal # import into terminal
+# Fish shell setup
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
+fisher install jorgebucaran/fisher IlanCosman/tide@v6 edc/bass
+cp config.fish ~/.config/fish/config.fish
+tide configure
 
-# Zsh settings
-ln -s '.z*' "$HOME"
-cp .zprofile ~/.zprofile
-cp .zshrc ~/.zshrc
+# Setup pip
+sudo easy_install pip
+
+# Node
+curl -fsSL https://fnm.vercel.app/install | bash
+fvm install 24
+npm install -g @anthropic-ai/claude-code
 
 # Github setup
 cp git_config/.gitconfig ~/.gitconfig
 cp git_config/.gitignore ~/.gitignore
 git config --global core.excludesfile ~/.gitignore
+gh auth login
 
-printf "\nDone! Make sure you install the recommended powerline10k fonts: https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k\n"
+printf "\nDone! Make sure you setup fish as your default shell in iterm `/opt/homebrew/bin/fish` and setup your color scheme.\n"
