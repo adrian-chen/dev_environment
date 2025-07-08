@@ -23,7 +23,7 @@ rm -rf fonts  # cleanup
 
 # Fish shell setup
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
-fisher install jorgebucaran/fisher IlanCosman/tide@v6 FabioAntunes/fish-nvm edc/bass
+fisher install jorgebucaran/fisher IlanCosman/tide@v6 edc/bass
 cp config.fish ~/.config/fish/config.fish
 tide configure
 
@@ -31,7 +31,8 @@ tide configure
 sudo easy_install pip
 
 # Node
-nvm install 24
+curl -fsSL https://fnm.vercel.app/install | bash
+fvm install 24
 npm install -g @anthropic-ai/claude-code
 
 # Github setup

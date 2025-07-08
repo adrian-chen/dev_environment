@@ -14,7 +14,9 @@ cask 'iterm2'
 cask 'visual-studio-code'
 brew 'ctags'
 brew 'fish'
-brew 'nvm'
+cask 'spotify'
+cask 'basecamp'
+brew 'direnv'
 
 # Powerline
 brew 'python'
